@@ -1,0 +1,20 @@
+<div class="content">
+
+	<div class="rowHeading">
+		<div class="name">Name</div>
+		<div class="username">Username</div>
+		<div class="email">E-mail</div>
+		<div class="address">Address</div>
+	</div>
+
+	<div class="userRow" *ngFor="let user of users">
+		<div class="name"><span class="label">Name:</span><a routerLink="/user/{{user.id}}">{{user.name}}</a></div>
+		<div class="username"><span class="label">Username:</span>{{user.username}}</div>
+		<div class="email"><span class="label">Email:</span>{{user.email}}</div>
+		<div class="address"><span class="label">Address:</span>
+			<div class="street">{{user.address.street}} </div>
+			<div class="suite">{{user.address.suite}}</div>
+			<div class="cityZip">{{user.address.city}} {{user.address.zipcode}}</div>
+		</div>
+	</div>
+</div>

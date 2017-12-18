@@ -1,0 +1,113 @@
+.content {
+	font-family: Verdana, sans-serif;
+	margin:.5em;
+	font-size: 80%;
+}
+
+@media (min-width: 920px) {
+	.content {
+		font-size: 100%;
+	}
+}
+
+h2 {
+	margin: .5em .2em;
+	font-weight: normal;
+	font-size: 200%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:visited, a:link {
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.rowHeading {
+	display: none;
+}
+
+@media (min-width: 720px) {
+	.rowHeading {
+		width: 100%;
+		display: flex;
+		padding: 0 .5em;
+	}
+
+	.rowHeading div {
+		flex: 1 0 auto;
+		font-weight: bold;
+		padding: .3em;
+		border-top: 1px solid #ccc;
+		border-bottom: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+}
+
+.userRow {
+	width: 100%;
+	padding: .5em;
+	border: 1px solid #ccc;
+}
+
+@media (min-width: 720px) {
+	.userRow {
+		display:flex;
+		margin:0;
+		padding: 0 .5em;
+		border: 0;
+	}
+
+	.userRow > div {
+		margin:0;
+		padding:.3em;
+		flex: 1 0 auto;
+		border-bottom: 1px solid #ccc;
+		border-left: 1px solid #ccc;
+	}
+
+    .name {
+		width:13em;
+	}
+
+	.username {
+		width:10em;
+	}
+
+	.email {
+		width:15em;
+	}
+
+	.address {
+		width:16em;
+		border-right: 1px solid #ccc;
+	}
+
+}
+
+.userRow .label{
+	margin-right: .4em;
+	font-weight: bold;
+}
+
+@media (min-width: 720px) {
+	.userRow .label{
+		display:none;
+	}
+}
+
+.userRow .address div {
+	margin-left: 1em;
+}
+
+@media (min-width: 720px) {
+	.userRow .address div {
+		margin-left: 0;
+	}
+}
+

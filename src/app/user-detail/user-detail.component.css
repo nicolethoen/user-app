@@ -1,0 +1,61 @@
+.wrapper {
+	padding:.5em;
+	font-family: Verdana, sans-serif;
+}
+
+.wrapper h2 {
+	margin: 0;
+	font-weight: normal;
+	font-size: 130%;
+}
+
+.userDetails {
+	margin: 1em 0;
+}
+
+.userDetails .detail {
+	width: 100%;
+	padding: .5em;
+}
+
+@media(min-width: 720px) {
+	.userDetails .detail {
+		display: flex;
+	}
+	.userDetails .detail > div{
+		display: flex-box;
+	}
+}
+
+.userDetails .detail .label {
+	font-weight: bold;
+	margin-bottom: .3em;
+}
+
+.userDetails .detail .info {
+	font-size: 80%;
+}
+
+@media(min-width: 720px) {
+
+	.userDetails .detail .label {
+		width: 8em;
+	}
+
+	.userDetails .detail .info {
+		font-size: 100%;
+	}
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:visited, a:link {
+	color: blue;
+}
+
+a:hover {
+	text-decoration: underline;
+}

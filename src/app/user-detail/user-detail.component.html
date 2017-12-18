@@ -1,0 +1,45 @@
+<div class="wrapper" *ngIf="user">
+
+	<h2>{{ user.name }} Details</h2>
+
+	<div class="userDetails">
+		<div class="detail">
+			<div class="label">Name:</div>
+			<div class="info">{{user.name}}</div>
+		</div>
+		<div class="detail">
+			<div class="label">Username:</div>
+			<div class="info">{{user.username}}</div>
+		</div>
+		<div class="detail">
+			<div class="label">Email:</div>
+			<div class="info">{{user.email}}</div>
+		</div>
+		<div class="detail">
+			<div class="label">Phone:</div>
+			<div class="info">{{user.phone}}</div>
+		</div>
+		<div class="detail">
+			<div class="label">Website:</div>
+			<div class="info">{{user.website}}</div>
+		</div>
+		<div class="detail">
+			<div class="label">Address:</div>
+			<div class="info">
+				<div>{{user.address.street}} </div>
+				<div>{{user.address.suite}}</div>
+				<div>{{user.address.city}} {{user.address.zipcode}}</div>
+			</div>
+		</div>
+		<div class="detail">
+			<div class="label">Company:</div>
+			<div class="info">
+				<div class="companyName">{{user.company.name}}</div>
+				<div class="catchPhrase">{{user.company.catchPhrase}}</div>
+				<div class="bs">{{user.company.bs}}</div>
+			</div>
+		</div>
+	</div>
+	<a class="" routerLink="/users">Back</a>
+</div>
+
